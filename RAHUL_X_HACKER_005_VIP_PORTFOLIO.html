@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#070817">
+<meta name="description" content="RAHUL X HACKER 005 — Web Developer, Telegram Bot Developer and Code Creator from Sindh, Pakistan.">
+<title>RAHUL X HACKER 005 — Official Portfolio</title>
+<style>
+:root{--bg:#070817;--panel:rgba(17,20,43,.72);--line:rgba(174,190,255,.18);--white:#f7f8ff;--muted:#a9b1ce;--cyan:#38e8ff;--pink:#ff3c9e;--violet:#9b6dff;--orange:#ff9850;--green:#68ffd2;--max:1180px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{background:var(--bg);color:var(--white);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.65;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-5;background:radial-gradient(ellipse at 8% 14%,#ff3c9e22,transparent 28%),radial-gradient(ellipse at 88% 15%,#38e8ff20,transparent 29%),radial-gradient(ellipse at 53% 75%,#9b6dff20,transparent 32%),linear-gradient(145deg,#070817,#0a1020 50%,#080817)}
+body:after{content:"";position:fixed;inset:0;z-index:-4;pointer-events:none;opacity:.17;background-image:linear-gradient(#8b9dff10 1px,transparent 1px),linear-gradient(90deg,#8b9dff10 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(to bottom,black,transparent 90%)}
+a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+#fx{position:fixed;inset:0;z-index:-2;pointer-events:none}
+.progress{position:fixed;top:0;left:0;width:0;height:3px;z-index:999;background:linear-gradient(90deg,var(--pink),var(--violet),var(--cyan),var(--green));box-shadow:0 0 18px var(--cyan)}
+.nav{position:sticky;top:0;z-index:100;border-bottom:1px solid #ffffff12;background:#070817bb;backdrop-filter:blur(22px)}
+.navin{height:78px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.logo{display:flex;align-items:center;gap:12px;font-weight:950;letter-spacing:.4px;font-size:13px}
+.logo-icon{height:44px;width:44px;display:grid;place-items:center;border-radius:14px;background:linear-gradient(135deg,var(--pink),var(--violet) 52%,var(--cyan));box-shadow:0 0 30px #9b6dff55;color:white;font-weight:1000;font-size:14px;position:relative;isolation:isolate}
+.logo-icon:after{content:"";position:absolute;inset:-3px;border-radius:16px;border:1px solid #ffffff60;z-index:-1}
+.logo small{display:block;color:var(--muted);font-size:9px;letter-spacing:3px;font-weight:800}
+.links{display:flex;gap:25px;align-items:center;font-size:11px;font-weight:850;letter-spacing:1.3px;color:#b7bfd9}
+.links a{transition:.25s}.links a:hover{color:var(--cyan);text-shadow:0 0 18px #38e8ff90}
+.menu{display:none;color:white;border:1px solid var(--line);background:#ffffff08;border-radius:12px;padding:9px 12px}
+.hero{min-height:calc(92vh - 78px);display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:50px;padding:76px 0 88px}
+.kicker{display:inline-flex;align-items:center;gap:9px;padding:8px 13px;border:1px solid #38e8ff40;border-radius:999px;background:linear-gradient(90deg,#38e8ff10,#9b6dff10);font-size:10px;font-weight:900;letter-spacing:1.8px;color:#b5f6ff}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 15px var(--green);animation:blink 1.4s infinite}
+h1{font-size:clamp(43px,6.2vw,79px);line-height:.99;letter-spacing:-3.6px;font-weight:1000;margin:26px 0 22px}
+.grad{background:linear-gradient(100deg,#fff 0%,var(--cyan) 23%,#a18aff 49%,var(--pink) 72%,var(--orange) 100%);background-size:250% auto;color:transparent;background-clip:text;-webkit-background-clip:text;animation:colorflow 8s linear infinite}
+.lead{max-width:600px;font-size:15px;color:var(--muted)}.lead strong{color:white}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:14px;padding:13px 18px;font-size:12px;font-weight:900;transition:transform .25s,box-shadow .25s;position:relative;overflow:hidden}
+.btn:hover{transform:translateY(-4px)}.primary{background:linear-gradient(105deg,var(--pink),var(--violet) 48%,#168eea);box-shadow:0 9px 32px #9b6dff3b;border:1px solid #ffffff20}.primary:hover{box-shadow:0 12px 40px #ff3c9e44}
+.secondary{background:#ffffff08;border:1px solid var(--line)}.secondary:hover{box-shadow:0 10px 28px #38e8ff14}
+.meta{display:flex;gap:16px;flex-wrap:wrap;margin-top:28px;color:var(--muted);font-size:11px}.meta span{display:flex;gap:7px;align-items:center}
+.visual{min-height:445px;display:grid;place-items:center;position:relative;perspective:1000px}
+.ring{position:absolute;width:min(100%,425px);aspect-ratio:1;border:1px solid #38e8ff35;border-radius:50%;animation:spin 24s linear infinite}
+.ring:before,.ring:after{content:"";position:absolute;width:11px;height:11px;border-radius:50%;background:var(--cyan);box-shadow:0 0 22px var(--cyan);top:14%;left:17%}.ring:after{top:auto;left:auto;right:10%;bottom:25%;background:var(--pink);box-shadow:0 0 22px var(--pink)}
+.ring.r2{width:min(80%,340px);border-color:#ff3c9e3d;animation-direction:reverse;animation-duration:18s}
+.ring.r3{width:min(60%,255px);border-style:dashed;border-color:#9b6dff40;animation-duration:30s}
+.idcard{position:relative;width:min(100%,340px);padding:24px;border-radius:27px;border:1px solid #b5c5ff38;background:linear-gradient(145deg,#202747d9,#0b1024e8 68%);box-shadow:0 25px 90px #0008,0 0 45px #9b6dff20,inset 0 1px #ffffff24;transform-style:preserve-3d;transition:transform .2s}
+.idtop{display:flex;justify-content:space-between;color:#aeb9db;font-size:9px;letter-spacing:1.6px;font-weight:900}
+.avatar-shell{width:135px;height:135px;margin:25px auto 17px;padding:4px;border-radius:50%;background:conic-gradient(var(--cyan),var(--violet),var(--pink),var(--orange),var(--cyan));box-shadow:0 0 30px #9b6dff45;animation:spin 12s linear infinite}
+.avatar{width:100%;height:100%;border-radius:50%;overflow:hidden;background:#0c1226;display:grid;place-items:center}
+.avatar img{width:100%;height:100%;object-fit:cover;animation:unspin 12s linear infinite}
+.initials{font-size:32px;font-weight:1000;background:linear-gradient(135deg,var(--cyan),var(--pink));color:transparent;background-clip:text;-webkit-background-clip:text}
+.idcard h2{text-align:center;font-size:21px;letter-spacing:.6px}.tagline{text-align:center;color:var(--cyan);font-size:11px;font-weight:850}
+.tags{display:flex;gap:7px;justify-content:center;flex-wrap:wrap;margin-top:17px}.tags span{font-size:9px;font-weight:850;color:#dfe6ff;padding:6px 9px;border:1px solid #ffffff16;border-radius:8px;background:#ffffff08}
+.float{position:absolute;z-index:2;border:1px solid #ffffff22;background:#11152bed;backdrop-filter:blur(14px);box-shadow:0 10px 40px #0005,0 0 25px #38e8ff15;border-radius:13px;padding:10px 13px;font-size:10px;font-weight:900;letter-spacing:.7px;animation:float 4s ease-in-out infinite}
+.f1{right:-1%;top:13%;color:#ffc1df}.f2{left:-2%;bottom:14%;animation-delay:-2s;color:#b5f7ff}.f3{right:0;bottom:10%;animation-delay:-1s;color:#d2c4ff}
+.section{padding:84px 0}.heading{max-width:690px;margin-bottom:34px}.number{font-size:10px;letter-spacing:3px;color:var(--cyan);font-weight:950}.title{font-size:clamp(30px,4.2vw,46px);line-height:1.12;letter-spacing:-1.6px;margin:9px 0 13px;font-weight:950}.desc{font-size:13px;color:var(--muted)}
+.glass{background:linear-gradient(145deg,#151a35c9,#0d1125d9);border:1px solid var(--line);border-radius:22px;box-shadow:0 20px 70px #0002,inset 0 1px #ffffff08;backdrop-filter:blur(18px)}
+.aboutgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.about{padding:27px;position:relative;overflow:hidden}.about:before{content:"";position:absolute;width:140px;height:140px;border-radius:50%;background:#9b6dff13;filter:blur(25px);right:-60px;top:-60px}.about h3{font-size:17px;margin-bottom:12px}.about p{font-size:13px;color:var(--muted)}
+.facts{display:grid;gap:12px;margin-top:18px}.fact{display:flex;justify-content:space-between;gap:15px;border-bottom:1px solid #ffffff12;padding-bottom:10px;font-size:12px}.fact:last-child{border:0;padding:0}.fact span{color:var(--muted)}.fact strong{text-align:right;font-size:11px}
+.pills{display:flex;gap:7px;flex-wrap:wrap;margin-top:17px}.pill{padding:5px 9px;border:1px solid #9b6dff35;background:#9b6dff12;color:#d9ceff;border-radius:8px;font-size:10px;font-weight:800}
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.skill{padding:23px;transition:transform .3s,border-color .3s;position:relative;overflow:hidden}.skill:hover,.project:hover{transform:translateY(-7px);border-color:#38e8ff65}.skill-icon{width:49px;height:49px;display:grid;place-items:center;border-radius:15px;font-size:22px;margin-bottom:17px;background:linear-gradient(135deg,#ff3c9e20,#9b6dff22,#38e8ff20);border:1px solid #ffffff16;box-shadow:inset 0 1px #ffffff10}.skill h3{font-size:15px;margin-bottom:7px}.skill p{font-size:11px;color:var(--muted);min-height:55px}.bar{height:4px;border-radius:9px;background:#ffffff10;margin-top:17px;overflow:hidden}.bar span{display:block;height:100%;width:var(--v);background:linear-gradient(90deg,var(--pink),var(--violet),var(--cyan));transform:scaleX(0);transform-origin:left;transition:transform 1.2s ease}.reveal.visible .bar span{transform:scaleX(1)}
+.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.project{overflow:hidden;transition:transform .3s,border-color .3s}.projectart{height:150px;display:grid;place-items:center;font-size:44px;position:relative;overflow:hidden;background:radial-gradient(circle at 25% 30%,#ff3c9e45,transparent 36%),radial-gradient(circle at 80% 80%,#38e8ff35,transparent 40%),linear-gradient(145deg,#171b39,#0d1125);border-bottom:1px solid #ffffff12}.projectart:after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 25%,#ffffff0b 45%,transparent 65%);transform:translateX(-100%);animation:sweep 5s ease-in-out infinite}.projectbody{padding:20px}.projectbody h3{font-size:15px;margin-bottom:7px}.projectbody p{font-size:11px;color:var(--muted);min-height:48px}.projectbody .pills{margin-top:13px}
+.gallery{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.photo{display:block;position:relative;overflow:hidden;aspect-ratio:4/5;border-radius:16px;border:1px solid #ffffff20;background:#11152a;cursor:pointer;padding:0}.photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .55s,filter .4s}.photo:hover img{transform:scale(1.08);filter:saturate(1.15)}.photo:after{content:"OPEN ↗";position:absolute;bottom:0;left:0;right:0;padding:26px 8px 10px;background:linear-gradient(transparent,#070817ee);font-size:10px;font-weight:950;letter-spacing:1.5px;opacity:0;transition:opacity .25s}.photo:hover:after{opacity:1}
+.contact{padding:36px;display:grid;grid-template-columns:1fr;gap:22px;position:relative;overflow:hidden}.contact:before{content:"";position:absolute;right:-60px;top:-180px;width:340px;height:340px;border-radius:50%;background:linear-gradient(135deg,#38e8ff24,#9b6dff15,#ff3c9e18);filter:blur(20px)}.contact h2{font-size:clamp(29px,4vw,43px);line-height:1.12;margin:10px 0}.contact p{font-size:13px;color:var(--muted);max-width:700px}.socials{display:flex;gap:10px;flex-wrap:wrap;position:relative}.social{display:flex;align-items:center;gap:9px;padding:12px 15px;border-radius:13px;border:1px solid #ffffff1c;background:#ffffff07;font-size:12px;font-weight:900;transition:.25s}.social:hover{transform:translateY(-4px);border-color:#38e8ff70;box-shadow:0 10px 30px #38e8ff12}
+footer{padding:25px 0 34px;border-top:1px solid #ffffff12;color:var(--muted);font-size:10px;letter-spacing:.4px}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.topbtn{position:fixed;right:18px;bottom:18px;width:44px;height:44px;display:grid;place-items:center;border:1px solid #ffffff20;border-radius:14px;color:white;background:#171a35e8;box-shadow:0 0 25px #9b6dff20;cursor:pointer;z-index:70;opacity:0;pointer-events:none;transform:translateY(8px);transition:.25s}.topbtn.show{opacity:1;pointer-events:auto;transform:none}
+.lightbox{position:fixed;inset:0;z-index:1000;background:#03040cf2;display:none;align-items:center;justify-content:center;padding:25px}.lightbox.open{display:flex}.lightbox img{max-width:95vw;max-height:85vh;object-fit:contain;border-radius:15px;box-shadow:0 0 60px #9b6dff28}.lightbox button{position:absolute;right:18px;top:18px;padding:10px 13px;border-radius:12px;color:white;background:#ffffff12;border:1px solid #ffffff25;cursor:pointer}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .75s ease,transform .75s ease}.reveal.visible{opacity:1;transform:translateY(0)}.d1{transition-delay:.1s}.d2{transition-delay:.2s}
+@keyframes blink{50%{opacity:.35;transform:scale(.8)}}@keyframes colorflow{to{background-position:250% center}}@keyframes spin{to{transform:rotate(360deg)}}@keyframes unspin{to{transform:rotate(-360deg)}}@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-11px)}}@keyframes sweep{0%,45%{transform:translateX(-100%)}70%,100%{transform:translateX(100%)}} 
+@media(max-width:900px){.hero{gap:20px}.visual{min-height:390px}.skills,.projects{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:680px){.wrap{width:calc(100% - 28px)}.navin{height:68px}.menu{display:block}.links{display:none;position:absolute;top:68px;left:0;right:0;background:#080a1af5;padding:20px 25px;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:17px}.links.open{display:flex}.hero{grid-template-columns:1fr;padding:58px 0 65px;gap:18px;min-height:auto}.herotext{text-align:center}.herotext .kicker{font-size:9px}.lead{font-size:13px;margin:auto}.actions,.meta{justify-content:center}h1{font-size:clamp(42px,12vw,62px);letter-spacing:-2px}.visual{min-height:370px}.idcard{max-width:300px}.ring{width:315px}.ring.r2{width:260px}.ring.r3{width:205px}.f1{right:0}.f2{left:0}.f3{right:0;bottom:7%}.section{padding:61px 0}.aboutgrid,.skills,.projects{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,1fr)}.heading{margin-bottom:25px}.contact{padding:25px}.foot{justify-content:center;text-align:center}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div><canvas id="fx" aria-hidden="true"></canvas>
+<header class="nav"><div class="wrap navin">
+<a class="logo" href="#home"><span class="logo-icon">RX</span><span>RAHUL X HACKER<small>OFFICIAL PORTFOLIO • 005</small></span></a>
+<button class="menu" id="menu" aria-expanded="false">☰ MENU</button>
+<nav class="links" id="links"><a href="#home">HOME</a><a href="#about">ABOUT</a><a href="#skills">SKILLS</a><a href="#projects">PROJECTS</a><a href="#gallery">GALLERY</a><a href="#contact">CONTACT</a></nav>
+</div></header>
+<main>
+<section class="wrap hero" id="home">
+<div class="herotext">
+<div class="kicker"><span class="dot"></span> STUDENT · DEVELOPER · CREATOR</div>
+<h1>RAHUL X<br><span class="grad">HACKER 005</span></h1>
+<p class="lead">Hey, I'm <strong>Rahul Kumar</strong> — a Sindhi student from Pakistan with a passion for building websites, Telegram bots, and creative coding projects. <strong>Dream big. Learn daily. Build boldly.</strong></p>
+<div class="actions"><a class="btn primary" href="#projects">EXPLORE MY WORK <span>↗</span></a><a class="btn secondary" href="#contact">LET'S CONNECT <span>✦</span></a></div>
+<div class="meta"><span>📍 Sindh, Pakistan</span><span>💻 Web & Bot Development</span><span>📚 Student & Learner</span></div>
+</div>
+<div class="visual" id="visual"><div class="ring"></div><div class="ring r2"></div><div class="ring r3"></div>
+<div class="float f1">✦ CREATIVE BUILDER</div><div class="float f2">⌘ CODE · CREATE · LEARN</div><div class="float f3">⚡ DIGITAL IDEAS</div>
+<article class="idcard" id="idcard"><div class="idtop"><span>PROFILE / 005</span><span>● ACTIVE</span></div>
+<div class="avatar-shell"><div class="avatar"><img src="https://i.postimg.cc/XYY8Ln28/file-00000000257482088368289a9c3fb7a8.png" alt="Rahul profile" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="initials" style="display:none">RX</span></div></div>
+<h2>RAHUL KUMAR</h2><div class="tagline">RAHUL X HACKER 005</div><div class="tags"><span>WEB DEV</span><span>TELEGRAM BOTS</span><span>CODE LAB</span></div></article>
+</div>
+</section>
+<section class="section" id="about"><div class="wrap">
+<div class="heading reveal"><div class="number">01 / INTRODUCTION</div><h2 class="title">Meet the mind behind <span class="grad">the code.</span></h2><p class="desc">Curiosity is my superpower. Technology is my playground.</p></div>
+<div class="aboutgrid">
+<article class="glass about reveal"><h3>👋 Hey, I'm Rahul!</h3><p>I'm a school student from Sindh, Pakistan, learning how to turn ideas into digital experiences. I enjoy designing websites, building Telegram bot projects, experimenting with code, and solving errors step by step. I'm growing my skills one project at a time and aiming to become a stronger developer.</p><div class="pills"><span class="pill">Creative Thinking</span><span class="pill">Problem Solving</span><span class="pill">Always Learning</span></div></article>
+<article class="glass about reveal d1"><h3>✧ Quick Profile</h3><div class="facts"><div class="fact"><span>Public Name</span><strong>RAHUL X HACKER 005</strong></div><div class="fact"><span>Real Name</span><strong>Rahul Kumar</strong></div><div class="fact"><span>Home</span><strong>Sindh, Pakistan 🇵🇰</strong></div><div class="fact"><span>Occupation</span><strong>School Student</strong></div><div class="fact"><span>Focus</span><strong>Websites · Bots · Code</strong></div></div></article>
+</div></div></section>
+<section class="section" id="skills"><div class="wrap">
+<div class="heading reveal"><div class="number">02 / MY TOOLKIT</div><h2 class="title">Skills I'm <span class="grad">building.</span></h2><p class="desc">The technologies and interests I'm exploring. These bars are decorative indicators, not certified skill ratings.</p></div>
+<div class="skills">
+<article class="glass skill reveal"><div class="skill-icon">🌐</div><h3>Web Development</h3><p>Responsive pages, stylish layouts, interactive sections, and front-end experiments.</p><div class="bar"><span style="--v:72%"></span></div></article>
+<article class="glass skill reveal d1"><div class="skill-icon">🤖</div><h3>Telegram Bots</h3><p>Bot commands, inline menus, useful automations, and community features.</p><div class="bar"><span style="--v:65%"></span></div></article>
+<article class="glass skill reveal d2"><div class="skill-icon">⌘</div><h3>Code & Debugging</h3><p>Understanding code, finding errors, testing ideas, and learning safe coding practices.</p><div class="bar"><span style="--v:60%"></span></div></article>
+<article class="glass skill reveal"><div class="skill-icon">🎨</div><h3>UI / Visual Design</h3><p>Glass cards, gradients, color systems, clean layouts, and motion effects.</p><div class="bar"><span style="--v:68%"></span></div></article>
+<article class="glass skill reveal d1"><div class="skill-icon">🧩</div><h3>Problem Solving</h3><p>Breaking a challenge into smaller steps and improving through practice.</p><div class="bar"><span style="--v:62%"></span></div></article>
+<article class="glass skill reveal d2"><div class="skill-icon">📚</div><h3>Continuous Learning</h3><p>Balancing school with coding and developing better habits every day.</p><div class="bar"><span style="--v:80%"></span></div></article>
+</div></div></section>
+<section class="section" id="projects"><div class="wrap">
+<div class="heading reveal"><div class="number">03 / SHOWCASE</div><h2 class="title">Ideas in <span class="grad">progress.</span></h2><p class="desc">A few project categories that represent what I like to create.</p></div>
+<div class="projects">
+<article class="glass project reveal"><div class="projectart">🖥️</div><div class="projectbody"><h3>Portfolio & Tool Websites</h3><p>Custom responsive websites with vibrant themes, motion, and interactive components.</p><div class="pills"><span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">JavaScript</span></div></div></article>
+<article class="glass project reveal d1"><div class="projectart">🤖</div><div class="projectbody"><h3>Telegram Bot Projects</h3><p>Bot ideas with commands, menus, community links, and helpful admin features.</p><div class="pills"><span class="pill">Python</span><span class="pill">Bot API</span><span class="pill">Automation</span></div></div></article>
+<article class="glass project reveal d2"><div class="projectart">🧪</div><div class="projectbody"><h3>Code Lab</h3><p>Small experiments for practising logic, debugging, and exploring new concepts.</p><div class="pills"><span class="pill">Practice</span><span class="pill">Debugging</span><span class="pill">Learning</span></div></div></article>
+</div><p style="color:var(--muted);font-size:11px;margin-top:15px">Replace these sample categories with your real project names and links whenever you're ready.</p>
+</div></section>
+<section class="section" id="gallery"><div class="wrap">
+<div class="heading reveal"><div class="number">04 / MY GALLERY</div><h2 class="title">A little <span class="grad">visual world.</span></h2><p class="desc">Your five supplied images, with a tap-to-expand preview.</p></div>
+<div class="gallery">
+<button class="photo reveal" data-src="https://i.postimg.cc/XYY8Ln28/file-00000000257482088368289a9c3fb7a8.png" aria-label="View image 1"><img loading="lazy" src="https://i.postimg.cc/XYY8Ln28/file-00000000257482088368289a9c3fb7a8.png" alt="Gallery image one"></button>
+<button class="photo reveal d1" data-src="https://i.postimg.cc/856wvwZh/file-000000004d948210849ca97aac9968df.png" aria-label="View image 2"><img loading="lazy" src="https://i.postimg.cc/856wvwZh/file-000000004d948210849ca97aac9968df.png" alt="Gallery image two"></button>
+<button class="photo reveal d2" data-src="https://i.postimg.cc/3xxB13Lk/file-0000000093448208a51930f8b87f5f81.png" aria-label="View image 3"><img loading="lazy" src="https://i.postimg.cc/3xxB13Lk/file-0000000093448208a51930f8b87f5f81.png" alt="Gallery image three"></button>
+<button class="photo reveal d1" data-src="https://i.postimg.cc/Qddbmj6q/file-00000000c92082088648163c389caa36.png" aria-label="View image 4"><img loading="lazy" src="https://i.postimg.cc/Qddbmj6q/file-00000000c92082088648163c389caa36.png" alt="Gallery image four"></button>
+<button class="photo reveal d2" data-src="https://i.postimg.cc/GmmQKbMh/file-00000000f67c82438500ade8f439692c.png" aria-label="View image 5"><img loading="lazy" src="https://i.postimg.cc/GmmQKbMh/file-00000000f67c82438500ade8f439692c.png" alt="Gallery image five"></button>
+</div></div></section>
+<section class="section" id="contact"><div class="wrap"><div class="contact glass reveal">
+<div><div class="number">05 / GET IN TOUCH</div><h2>Let's build something <span class="grad">cool.</span></h2><p>Have a project idea or want to talk about coding? Connect through my social profiles. I may be busy with school, so replies can take a little time.</p></div>
+<div class="socials"><a class="social" href="https://www.instagram.com/helping.zone.005/" target="_blank" rel="noopener noreferrer">📸 Instagram ↗</a><a class="social" href="https://www.tiktok.com/@rahulxhacker" target="_blank" rel="noopener noreferrer">🎵 TikTok ↗</a><a class="social" href="https://t.me/RAHULXHACKER" target="_blank" rel="noopener noreferrer">✈️ Telegram ↗</a></div>
+</div></div></section>
+</main>
+<footer><div class="wrap foot"><span>© <span id="year"></span> RAHUL X HACKER 005 · MADE WITH CURIOSITY</span><span>DESIGN ✦ CODE ✦ LEARN ✦ REPEAT</span></div></footer>
+<button class="topbtn" id="topbtn" aria-label="Back to top">↑</button>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Gallery preview"><button id="close">✕ CLOSE</button><img id="large" alt="Expanded gallery image"></div>
+<script>
+const $=s=>document.querySelector(s), $$=s=>document.querySelectorAll(s);
+const menu=$('#menu'),links=$('#links');
+menu.addEventListener('click',()=>{const open=links.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.textContent=open?'✕ CLOSE':'☰ MENU'});
+links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');menu.textContent='☰ MENU';menu.setAttribute('aria-expanded','false')}));
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.12});
+$$('.reveal').forEach(el=>observer.observe(el));
+function scrollUI(){const max=document.documentElement.scrollHeight-innerHeight;$('#progress').style.width=(max?scrollY/max*100:0)+'%';$('#topbtn').classList.toggle('show',scrollY>400)}
+addEventListener('scroll',scrollUI,{passive:true});scrollUI();$('#topbtn').onclick=()=>scrollTo({top:0,behavior:'smooth'});$('#year').textContent=new Date().getFullYear();
+const lb=$('#lightbox'),large=$('#large');$$('.photo').forEach(b=>b.addEventListener('click',()=>{large.src=b.dataset.src;lb.classList.add('open');document.body.style.overflow='hidden'}));
+function closeLB(){lb.classList.remove('open');large.src='';document.body.style.overflow=''}$('#close').onclick=closeLB;lb.addEventListener('click',e=>{if(e.target===lb)closeLB()});addEventListener('keydown',e=>{if(e.key==='Escape')closeLB()});
+// Lightweight animated particle network background
+const canvas=$('#fx'),ctx=canvas.getContext('2d'),reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;let W=0,H=0,pts=[],frame=0;
+function resize(){const d=Math.min(devicePixelRatio||1,1.5);W=innerWidth;H=innerHeight;canvas.width=W*d;canvas.height=H*d;canvas.style.width=W+'px';canvas.style.height=H+'px';ctx.setTransform(d,0,0,d,0,0);pts=Array.from({length:Math.min(68,Math.max(24,Math.floor(W/17)))},()=>({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.3,vy:(Math.random()-.5)*.3,r:Math.random()*1.5+.5,c:Math.random()>.5?'56,232,255':'255,60,158'}));}
+function draw(animate=true){ctx.clearRect(0,0,W,H);for(let i=0;i<pts.length;i++){let p=pts[i];if(animate){p.x+=p.vx;p.y+=p.vy}if(p.x<0)p.x=W;if(p.x>W)p.x=0;if(p.y<0)p.y=H;if(p.y>H)p.y=0;ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fillStyle=`rgba(${p.c},.75)`;ctx.fill();for(let j=i+1;j<pts.length;j++){let q=pts[j],dx=p.x-q.x,dy=p.y-q.y,dist=Math.hypot(dx,dy);if(dist<105){ctx.beginPath();ctx.moveTo(p.x,p.y);ctx.lineTo(q.x,q.y);ctx.strokeStyle=`rgba(130,145,220,${(1-dist/105)*.13})`;ctx.stroke()}}}if(animate)frame=requestAnimationFrame(()=>draw(true))}
+resize();if(reduced)draw(false);else draw(true);addEventListener('resize',()=>{cancelAnimationFrame(frame);resize();if(reduced)draw(false);else draw(true)});
+// Desktop pointer tilt for profile card
+if(matchMedia('(hover:hover) and (pointer:fine)').matches&&!reduced){const v=$('#visual'),card=$('#idcard');v.addEventListener('mousemove',e=>{const r=v.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;card.style.transform=`rotateY(${x*8}deg) rotateX(${-y*8}deg)`});v.addEventListener('mouseleave',()=>card.style.transform='')}
+</script>
+</body>
+</html>
